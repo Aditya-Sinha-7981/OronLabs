@@ -1,0 +1,1362 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.center-div {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .center-div {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  line-height: 79.38px;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  h2 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}
+
+header.landing-page {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: #E5E5E5;
+}
+
+header.landing-page nav.navbar {
+  padding: 15px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header.landing-page nav.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.landing-page nav.navbar .logo img.logo {
+  width: 70px;
+}
+
+header.landing-page nav.navbar ul {
+  width: 100%;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.landing-page nav.navbar ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+header.landing-page nav.navbar ul li a {
+  text-decoration: none;
+  font-family: "Red Hat Display";
+  color: #A0A0A0;
+  font-weight: 500;
+}
+
+header.landing-page nav.navbar ul li a.active {
+  color: #0000FF;
+}
+
+header.landing-page nav.navbar .hamburger {
+  display: none;
+}
+
+header.landing-page nav.navbar .hamburger a {
+  margin: 0 20px;
+}
+
+header.landing-page nav.navbar .hamburger a i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 25px;
+  color: #0000FF;
+}
+
+header.landing-page nav.navbar .hamburger button i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header.landing-page .hamburger-menu {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  background: #E5E5E5;
+}
+
+header.landing-page .hamburger-menu ul {
+  list-style: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.landing-page .hamburger-menu ul li {
+  margin: 20px 0;
+}
+
+header.landing-page .hamburger-menu ul li a {
+  color: #0000FF;
+  text-decoration: none;
+  font-family: "Red Hat Display";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+header.landing-page .hamburger-menu ul li a.active {
+  font-weight: 700;
+}
+
+header.landing-page .hamburger-menu.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.landing {
+  padding: 50px 0;
+}
+
+section.landing .landing-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+section.landing .landing-wrapper .landing-heading {
+  max-width: 60%;
+}
+
+section.landing .landing-wrapper .landing-heading h1 {
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-weight: 700;
+  font-size: 75px;
+}
+
+section.landing .landing-wrapper .landing-content {
+  max-width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.landing .landing-wrapper .landing-content p {
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+section.landing .landing-wrapper .landing-content a.button {
+  background: #0000FF;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Red Hat Display";
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+section.landing .landing-wrapper .landing-content a.button i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+section.options {
+  margin-top: 100px;
+}
+
+section.options .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.options .content-wrapper .content-card {
+  width: 33%;
+  border: 1px solid #0000FF;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.options .content-wrapper .content-card .content-container {
+  width: 80%;
+}
+
+section.options .content-wrapper .content-card .content-container h4 {
+  font-size: 30px;
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  color: #0000FF;
+  width: 80%;
+}
+
+section.options .content-wrapper .content-card .content-container p {
+  font-size: 18px;
+  font-family: "Red Hat Display";
+  font-weight: 400;
+  margin: 20px 0;
+  width: 90%;
+  color: #0000FF;
+}
+
+section.options .content-wrapper .content-card .content-container i {
+  margin-top: 20px;
+  font-size: 30px;
+  margin-left: 20px;
+  color: #0000FF;
+}
+
+section.options .content-wrapper .content-card.middle {
+  background: #0000FF;
+}
+
+section.options .content-wrapper .content-card.middle .content-container h4, section.options .content-wrapper .content-card.middle .content-container p, section.options .content-wrapper .content-card.middle .content-container i {
+  color: #FFFFFF;
+}
+
+section.team {
+  padding: 150px 0;
+  width: 100%;
+}
+
+section.team .content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.team .content-wrapper h2 {
+  width: 50%;
+  text-align: center;
+}
+
+section.team .content-wrapper .team-members {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.team .content-wrapper .team-members .member {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.team .content-wrapper .team-members .member img {
+  width: 100%;
+  max-height: 570px;
+}
+
+section.team .content-wrapper .team-members .member h4 {
+  margin-top: 15px;
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+section.team .content-wrapper .team-members .member p {
+  margin-top: 5px;
+  font-family: "Red Hat Display";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #0000FF;
+}
+
+section.vm .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.vm .content-wrapper .content-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.vm .content-wrapper .content-header p {
+  font-size: 18px;
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-weight: 400;
+  width: 60%;
+}
+
+section.vm .content-wrapper .content-section {
+  margin-top: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.vm .content-wrapper .content-section .image-wrapper {
+  width: 40%;
+}
+
+section.vm .content-wrapper .content-section .image-wrapper img {
+  width: 100%;
+}
+
+section.vm .content-wrapper .content-section .card-wrapper {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.vm .content-wrapper .content-section .card-wrapper .content-cards {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.vm .content-wrapper .content-section .card-wrapper .content-cards .card {
+  width: 40%;
+  height: 220px;
+}
+
+section.vm .content-wrapper .content-section .card-wrapper .content-cards .card .wrapper {
+  width: 117px;
+  height: 117px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.vm .content-wrapper .content-section .card-wrapper .content-cards .card h5, section.vm .content-wrapper .content-section .card-wrapper .content-cards .card p {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 18px;
+  margin: 20px 0;
+  color: #0000FF;
+}
+
+section.vm .content-wrapper .content-section .card-wrapper .content-cards .card h5 {
+  text-transform: uppercase;
+}
+
+section.vm .content-wrapper .content-section .card-wrapper .content-cards .card p {
+  font-weight: 400;
+}
+
+section.sliding {
+  width: 100%;
+}
+
+section.sliding swiper-slide {
+  padding: 70px 0;
+}
+
+section.sliding swiper-container .swiper-wrapper {
+  padding-bottom: 40px !important;
+}
+
+section.sliding .swiper-pagination {
+  bottom: 0;
+}
+
+section.sliding .slider-wrapper {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.sliding .slider-wrapper .image-wrapper {
+  width: 100%;
+}
+
+section.sliding .slider-wrapper .image-wrapper img {
+  width: 100%;
+}
+
+section.sliding .slider-wrapper .slider-content {
+  padding: 20px;
+  width: 60%;
+  position: absolute;
+  background: #0000FF;
+  top: 70%;
+  left: 10%;
+}
+
+section.sliding .slider-wrapper .slider-content h5 {
+  font-family: "Red Hat Display";
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+section.sliding .slider-wrapper .slider-content a {
+  font-family: "Red Hat Display";
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+section.sliding .slider-wrapper .slider-content a i {
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+section.our-partner {
+  padding: 70px 0;
+}
+
+section.our-partner .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.our-partner .content-container .partner-logos {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.our-partner .content-container .partner-logos .logo-wrapper {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.our-partner .content-container .partner-logos .logo-wrapper img {
+  mix-blend-mode: luminosity;
+  opacity: 0.55;
+}
+
+section.plans {
+  padding: 50px 0;
+}
+
+section.plans .content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.plans .content-wrapper .plans-content {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 100px 80px;
+  background: #0000FF;
+  font-family: "Red Hat Display";
+  color: #FFFFFF;
+}
+
+section.plans .content-wrapper .plans-content h4 {
+  font-weight: 700;
+  font-size: 30px;
+  width: 90%;
+}
+
+section.plans .content-wrapper .plans-content a {
+  margin-top: 30px;
+  color: #0000FF;
+  background: #FFFFFF;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+section.plans .content-wrapper .plans-content a i {
+  margin-left: 10px;
+}
+
+section.plans .content-wrapper .share-content {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 100px 80px;
+  background: #FFFFFF;
+  font-family: "Red Hat Display";
+  color: #0000FF;
+}
+
+section.plans .content-wrapper .share-content h4 {
+  width: 85%;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+section.plans .content-wrapper .share-content a {
+  margin-top: 30px;
+  color: #FFFFFF;
+  background: #0000FF;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+section.plans .content-wrapper .share-content a i {
+  margin-left: 10px;
+}
+
+section.ending {
+  padding: 100px 0;
+}
+
+section.ending .content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.ending .content-wrapper .text-container {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.ending .content-wrapper .text-container h3 {
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 111.13px;
+}
+
+section.ending .content-wrapper .text-container a {
+  margin-top: 40px;
+  font-family: "Red Hat Display";
+  color: #FFFFFF;
+  background: #0000FF;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26.46px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+section.ending .content-wrapper .text-container a i {
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+section.ending .content-wrapper .link-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-weight: 400;
+  font-size: 18px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.ending .content-wrapper .link-container .page-links {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.ending .content-wrapper .link-container .page-links .link-wrapper, section.ending .content-wrapper .link-container .page-links .contact-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.ending .content-wrapper .link-container .page-links .link-wrapper a, section.ending .content-wrapper .link-container .page-links .contact-wrapper a {
+  text-decoration: none;
+  color: #0000FF;
+  margin-top: 10px;
+}
+
+section.ending .content-wrapper .link-container .page-links .link-wrapper h4, section.ending .content-wrapper .link-container .page-links .contact-wrapper h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+section.ending .content-wrapper .link-container .page-links .link-wrapper h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+section.ending .content-wrapper .link-container .social-links {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section.ending .content-wrapper .link-container .social-links h4 {
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-weight: 700;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+section.ending .content-wrapper .link-container .social-links .social-wrapper {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.ending .content-wrapper .link-container .social-links .social-wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+section.ending .content-wrapper .link-container .social-links .social-wrapper a i {
+  color: #0000FF;
+}
+
+hr.ending-line {
+  width: 80%;
+  height: 0;
+  border: none;
+  border-top: 2px solid #A0A0A0;
+  padding: 10px 0;
+  outline: none;
+  background: none;
+  margin: 0 auto;
+}
+
+section.copyright {
+  padding: 20px 0;
+  font-size: 18px;
+  font-family: "Red Hat Display";
+  color: #0000FF;
+  font-weight: 400;
+  line-height: 23.81px;
+}
+
+section.copyright .content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.copyright .content-wrapper h4 {
+  font-weight: 400;
+}
+
+section.copyright .content-wrapper .creator a {
+  color: #0000FF;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  header.landing-page nav.navbar ul {
+    font-size: 16px;
+  }
+  section.landing .landing-wrapper .landing-heading {
+    max-width: 60%;
+  }
+  section.landing .landing-wrapper .landing-heading h1 {
+    font-size: 50px;
+  }
+  section.landing .landing-wrapper .landing-content {
+    max-width: 40%;
+  }
+  section.landing .landing-wrapper .landing-content P, section.landing .landing-wrapper .landing-content a.button {
+    font-size: 16px;
+  }
+  section.options {
+    margin-top: 50px;
+  }
+  section.options .content-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.options .content-wrapper .content-card {
+    width: 50%;
+  }
+  section.options .content-wrapper .content-card .content-container h4 {
+    width: 100%;
+  }
+  section.options .content-wrapper .content-card.middle, section.options .content-wrapper .content-card {
+    background: #FFFFFF;
+  }
+  section.options .content-wrapper .content-card.middle .content-container h4, section.options .content-wrapper .content-card.middle .content-container p, section.options .content-wrapper .content-card.middle .content-container i, section.options .content-wrapper .content-card .content-container h4, section.options .content-wrapper .content-card .content-container p, section.options .content-wrapper .content-card .content-container i {
+    color: #0000FF;
+  }
+  section.options .content-wrapper .content-card.middle .content-container p, section.options .content-wrapper .content-card .content-container p {
+    width: 100%;
+  }
+  section.options .content-wrapper .content-card.middle .content-container h4, section.options .content-wrapper .content-card .content-container h4 {
+    width: 100%;
+  }
+  section.team {
+    padding: 50px 0;
+  }
+  section.team .content-wrapper h2 {
+    width: 100%;
+  }
+  section.team .content-wrapper .team-members .member h4 {
+    font-size: 24px;
+  }
+  section.team .content-wrapper .team-members .member p {
+    font-size: 14px;
+  }
+  section.vm .content-wrapper .content-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.vm .content-wrapper .content-header p {
+    width: 75%;
+    font-size: 16px;
+  }
+  section.vm .content-wrapper .content-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.vm .content-wrapper .content-section .image-wrapper {
+    width: auto;
+  }
+  section.vm .content-wrapper .content-section .card-wrapper {
+    margin-top: 0px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.vm .content-wrapper .content-section .card-wrapper .content-cards .card {
+    margin-top: 20px;
+  }
+  section.vm .content-wrapper .content-section .card-wrapper .content-cards .card .wrapper, section.vm .content-wrapper .content-section .card-wrapper .content-cards .card h5, section.vm .content-wrapper .content-section .card-wrapper .content-cards .card p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  section.vm .content-wrapper .content-section .card-wrapper .content-cards .card h5 {
+    margin: 10px 0;
+  }
+  section.sliding .slider-wrapper .slider-content {
+    width: 75%;
+  }
+  section.sliding .slider-wrapper .slider-content h5 {
+    font-size: 20px;
+  }
+  section.sliding .slider-wrapper .slider-content a {
+    font-size: 14px;
+  }
+  section.our-partner {
+    padding: 50px 0;
+  }
+  section.our-partner .content-container .partner-logos {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section.our-partner .content-container .partner-logos .logo-wrapper {
+    width: 40%;
+  }
+  section.our-partner .content-container .partner-logos .logo-wrapper img {
+    width: 100%;
+  }
+  section.plans {
+    padding: 20px 0;
+  }
+  section.plans .content-wrapper .plans-content, section.plans .content-wrapper .share-content {
+    padding: 50px 40px;
+  }
+  section.plans .content-wrapper .plans-content h4, section.plans .content-wrapper .share-content h4 {
+    width: 100%;
+    font-size: 25px;
+  }
+  section.plans .content-wrapper .plans-content a, section.plans .content-wrapper .share-content a {
+    font-size: 14px;
+  }
+  section.ending {
+    padding: 50px 0 0 0;
+  }
+  section.ending .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.ending .content-wrapper .text-container {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.ending .content-wrapper .text-container h3 {
+    width: 70%;
+    font-size: 60px;
+    text-align: center;
+    line-height: 70px;
+  }
+  section.ending .content-wrapper .text-container a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  section.ending .content-wrapper .link-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  section.ending .content-wrapper .link-container .page-links {
+    margin: 20px 0;
+  }
+  section.ending .content-wrapper .link-container .page-links .link-wrapper, section.ending .content-wrapper .link-container .page-links .contact-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.ending .content-wrapper .link-container .social-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.ending .content-wrapper .link-container .social-links h4 {
+    font-size: 20px;
+  }
+  section.ending .content-wrapper .link-container .social-links .social-wrapper a {
+    margin: 0 5px;
+  }
+  hr.ending-line {
+    width: 85%;
+    padding: 0;
+  }
+  section.copyright {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  header.landing-page nav.navbar ul {
+    display: none;
+  }
+  header.landing-page #hamburger {
+    display: block;
+  }
+  header.landing-page nav.navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header.landing-page nav.navbar ul {
+    display: none;
+  }
+  header.landing-page nav.navbar .hamburger {
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+  }
+  header.landing-page nav.navbar .hamburger a i {
+    color: #0000FF;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header.landing-page nav.navbar .hamburger button {
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  header.landing-page nav.navbar .hamburger button i {
+    font-size: 35px;
+    color: #0000FF;
+  }
+  section.landing {
+    padding-top: 0;
+  }
+  section.landing .landing-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.landing .landing-wrapper .landing-heading {
+    max-width: 100%;
+  }
+  section.landing .landing-wrapper .landing-heading h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  section.landing .landing-wrapper .landing-content {
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.landing .landing-wrapper .landing-content p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+  }
+  section.landing .landing-wrapper .landing-content a.button {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  section.landing .landing-wrapper .landing-content a.button i {
+    font-size: 15px;
+  }
+  section.options {
+    margin-top: 0;
+  }
+  section.options .content-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.options .content-wrapper .content-card {
+    width: 100%;
+    padding: 35px 0;
+  }
+  section.options .content-wrapper .content-card .content-container {
+    width: 100%;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.options .content-wrapper .content-card .content-container h4, section.options .content-wrapper .content-card .content-container p, section.options .content-wrapper .content-card .content-container i {
+    text-align: center;
+  }
+  section.options .content-wrapper .content-card .content-container h4 {
+    font-size: 25px;
+    width: 100%;
+  }
+  section.options .content-wrapper .content-card .content-container p {
+    width: 80%;
+  }
+  section.options .content-wrapper .content-card .content-container i {
+    margin: 0;
+  }
+  section.options .content-wrapper .content-card.middle {
+    background: #0000FF;
+  }
+  section.options .content-wrapper .content-card.middle .content-container h4, section.options .content-wrapper .content-card.middle .content-container p, section.options .content-wrapper .content-card.middle .content-container i {
+    color: #FFFFFF;
+  }
+  section.options .content-wrapper .content-card.middle .content-container h4 {
+    font-size: 25px;
+    width: 100%;
+  }
+  section.options .content-wrapper .content-card.middle .content-container p {
+    width: 80%;
+  }
+  section.team .content-wrapper .team-members {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.team .content-wrapper .team-members .member {
+    width: 75%;
+  }
+  section.team .content-wrapper .team-members .member h4 {
+    margin-top: 10px;
+  }
+  section.vm .content-wrapper .content-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.vm .content-wrapper .content-header p {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  section.vm .content-wrapper .content-section {
+    margin-top: 20px;
+  }
+  section.vm .content-wrapper .content-section .card-wrapper .content-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  section.vm .content-wrapper .content-section .card-wrapper .content-cards .card {
+    width: 80%;
+  }
+  section.sliding swiper-slide {
+    padding: 20px 0 50px 0;
+  }
+  section.our-partner {
+    padding: 20px 0;
+  }
+  section.our-partner .content-container .partner-logos .logo-wrapper {
+    width: 40%;
+  }
+  section.our-partner .content-container .partner-logos .logo-wrapper img {
+    width: 100%;
+  }
+  section.plans {
+    padding: 0;
+  }
+  section.plans .content-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.plans .content-wrapper .plans-content, section.plans .content-wrapper .share-content {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.plans .content-wrapper .plans-content h4, section.plans .content-wrapper .share-content h4 {
+    text-align: center;
+  }
+  section.plans .content-wrapper .share-content {
+    margin-top: 20px;
+  }
+  section.ending {
+    padding: 20px 0;
+  }
+  section.ending .content-wrapper .text-container h3 {
+    font-size: 50px;
+    width: 100%;
+  }
+  section.ending .content-wrapper .text-container a {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  section.ending .content-wrapper .link-container .social-links {
+    margin-bottom: 0;
+  }
+  section.copyright {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+// Variable
+
+$primary-color: #0000FF;
+$secondary-color: #EDEDED;
+$tertiary-color: #A0A0A0;
+
+$primaryFont: 'Red Hat Display';
+
+
+//Root
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+// Center div 
+
+.center-div{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+//Media queries 
+
+@media screen and (max-width: 1024px){
+
+    // Center div
+
+    .center-div{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 95%;
+    }
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: $primaryFont;
+    color: $primary-color;
+    line-height: 79.38px;
+}
+
+@media screen and (max-width:768px) {
+   
+    h2{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    
+    h2{
+        font-size: 38px;
+        line-height: 50px;
+    }
+}
